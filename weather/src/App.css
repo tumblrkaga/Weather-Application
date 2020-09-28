@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+span{  
+  color: #0d4cd4;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'Merriweather','Helvetica Neue','Segoe UI','Open+Sans',-apple-system, BlinkMacSystemFont, Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans',  sans-serif;
+  shape-rendering: crispEdges;
+  font-style: italic;
+}
+.weather__key {
+  color: #2aecec;
+  font-weight: 300;
+  font-size: 20px;
+  font-family: 'Open+Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  shape-rendering: crispEdges;
+
+  padding: 2px 0 2px 0;  
+  border-bottom: solid 2px rgba(255,255,255,0.06);
+  width: 50%;
+}
+
+.weather__value {
+  color: #fff;
+  font-weight: 200;
+  font-size: 20px;
+  font-family: 'Open+Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  shape-rendering: crispEdges;
+  font-style: italic;
+}
+
+.precaution {
+  color: #ec412a;
+  font-weight: 300;
+  font-size: 18px;
+  font-family: 'Open+Sans',-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  shape-rendering: crispEdges;
+  }
+
+
+.detail_wrapper {
+  background: linear-gradient(to right,#021B79,#0575E6);
+  height: 100vh;
+  
+}
+
+.wrapper {
+  background: linear-gradient(to right,#36D1DC,#5B86E5);  
+  height: 100vh;
+
+  
+}
+
+.detail-container {
+  height: 20vh;
+  background-size: 250px 50px;
+  align-items: right;
+  justify-content: left; 
+  text-align: left;
+  color: rgb(228, 237, 240); 
+  animation:animate 1s linear ;
+}
+
+@keyframes animate {
+  0%{ 
+    transform: translate(0, -50%);
+  };
+  100%{
+    transform: translate(-50%, 0);
+  }
+}
+
+.city{
+  font-size: 20px;
+  font-family: 'Merriweather', Roboto;
+  shape-rendering: crispEdges;
+  font-style: italic;
+  font-weight: 100;
+  text-align: left;
+  color: rgb(243, 243, 243); 
+  transform: scale(0.5);
+  transition: all 0.3s ease-in-out 0.2s;
+}
+
+.city:hover {
+  color: rgb(2, 47, 173); 
+  transform: scale(1);
+  transition: all 0.3s ease-in-out 0.1s; /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.map {
+  font-size: 25px;
+  font-weight: 100;
+  font-family: 'Merriweather', Roboto;
+  height: 90vh;
+  box-shadow: 0px 13px 40px -13px rgba(182, 66, 20, 0.75);
+  margin: 0 auto;
+  background: rgba(205, 206, 206, 0.678);
+  padding: 20px; 
+  border-radius: 10%;
+  top: 20px;
+  position: right;
+  right : -250px;
+}
+
+
+.title-container {
+  height: 20vh;
+  background: url("./img/truecaller.png") center right 100% no-repeat;
+  background-size: 250px 50px;
+  align-items: right;
+  justify-content: left; 
+
+  text-align: left;
+  color: rgb(228, 237, 240); 
+  font-size: 25px;
+  font-weight: 100;
+  font-family: 'Merriweather', Roboto;
+  shape-rendering: crispEdges;
+  font-style: italic;
+  transition: width 2s;
+  animation: 
+    typing 0.5s steps(30, end),
+    blinking-cursor .5s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blinking-cursor {
+  from, to { border-color: transparent }
+  50% { border-color: rgb(55, 0, 255) }
+}
+
+.country{
+  width: '10px';
+  height: '10px';
+}
+
+.button {
+  border: 0;
+  padding: 8px 20px;
+  border-radius: 2px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #f16051;
+  color: #fff;
+  font-weight: 200;  
+  margin-left:140px;
+  float: center;
+ 
+}
+
+button:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+     -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+          box-shadow: inset 0px 0px 5px #c1c1c1;
+   outline: none;
+}
+
+.menu{
+  list-style-type: square type non;;
+  margin: 0;
+  float:right;
+  margin-right:20px;
+  color: #33f3c3;
+}
+
+.menu li{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.logo{
+  width: 150px;
+}
+
+
+.media{
+  size: 48px;
+}
+
+.button_top {
+  border: 0;
+  padding: 8px 8px;
+  border-radius: 10px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color:transparent;
+  color: rgb(153, 9, 9);
+  font-weight: 500;  
+  margin-left:10px;
+  margin-right:10px;
+  float: center; 
+}
+
+.menu_top{
+  list-style-type: square type non;;
+  margin: 0;
+  float:right;
+  margin-right:20px;
+  color: #f33393;
+}
+
+.menu_top li{
+  display: inline-block;
+  margin-left: 10px;
+}
